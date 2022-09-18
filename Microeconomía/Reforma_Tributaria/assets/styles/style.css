@@ -1,0 +1,150 @@
+
+body{
+    font-family: Georgia, 'Times N', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    background: gainsboro;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-attachment: fixed;
+    position: relative;
+}
+    .header a{
+        text-decoration: none;
+        color: rgb(110, 96, 79);
+        font-size:xx-large;
+        font-family: Georgia, 'Times N', Times, serif;
+    }
+.nav{
+    height: 100%;
+    background-color: #b6a586;  
+    border-bottom: solid 10px rgb(110, 96, 79);
+}
+.nav-menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+      
+}
+.nav-menu-item{
+    height: 100px;
+    width: 770px;
+    background: none;
+    border: none;
+}
+#item-concept{
+    border-right: dotted 2px rgb(110, 96, 79);
+}
+#item-news{
+    border-left: dotted 2px rgb(110, 96, 79);
+}
+.main1{
+    margin: 5% 2%;
+}
+.themes{
+    display: flex;
+    padding-left: 50px;
+    width: auto;
+    flex-wrap: wrap;
+}
+.collapsible{
+    min-width: 220px;
+    max-width: 640px;
+    overflow: hidden;
+    font-weight: 500;
+    margin: auto 20px;
+}
+.collapsible input{
+    display: none;
+}
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    font-size: large;
+    background: rgb(66, 64, 64);
+    color: white;
+    display: block;
+    margin-bottom: 10x;
+    cursor: pointer;
+    padding: 15px 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 15px;
+    line-height: 1.5;
+    position: relative;
+    top: -100%;
+    opacity: 0.7;
+    transition: all 0.3s ease-in;
+}
+.collapsible-text img{
+    height: 150px;
+    width: 150px;
+    display:block;
+    margin:auto;
+}
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 0;
+    padding-bottom: 25px;
+    background: none;
+    color: transparent;
+    opacity: 1;
+    top: 0;
+}
+.collapsible .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: #b5a185;
+    font-size: large;
+
+}
+.collapsible-text p{
+    padding: 0 15px 0 15px;
+}
+.main2{
+    margin: 3% 4%;
+    line-height: 2;
+    font-size: larger;
+}
+
+.tituloRef{
+    text-align: center;
+    font-size: xxx-large;
+    background: rgb(110, 96, 79);
+    color: white;
+    padding: 5% 0; 
+    margin: 3% 0 0 0 ;
+}
+.imgRef{
+    height: 700px;
+    width: 100%;
+    display:block;
+    margin: 0;
+    
+}
+.main2 #p1{
+    background-color: #787575;
+    padding: 1% 6%;
+    margin: 2% 4%;  
+    border: white dashed 4px;
+    color: white;
+}
+.main2 #p2{
+    border: #787575 solid 1px;
+}
+.main2 .opinion{
+    margin: 3% 300px;
+    background-color: rgb(166, 139, 105);
+    color: rgb(247, 230, 198);
+    border-radius: 30px;
+    text-align: center;
+    padding: 50px 100px;
+}
+
